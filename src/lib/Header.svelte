@@ -7,7 +7,9 @@
 		<a href="/gradinite">Grădinițe</a>
 		<a href="/scoli">Școli</a>
 		<a href="/licee">Licee</a>
+		<a href="/postliceale">Postliceale</a>
 		<a href="/universitati">Universități</a>
+		<a href="/academii">Academii</a>
 	</nav>
 </header>
 
