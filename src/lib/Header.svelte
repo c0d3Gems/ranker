@@ -27,6 +27,8 @@
 		width: fit-content;
 		margin: 0 1.2vw;
 		padding: 0;
+		position: relative;
+		bottom: 1px;
 	}
 	nav {
 		float: right;

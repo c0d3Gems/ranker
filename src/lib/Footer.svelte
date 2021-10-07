@@ -3,7 +3,7 @@
 </script>
 
 <footer>
-	Copyright &copy; <a href="/">analistul.ro</a>
+	Copyright &copy; <a href="/">analistul.com</a>
 	{thisYear}. Toate drepturile rezervate.
 </footer>
 

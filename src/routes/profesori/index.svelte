@@ -14,6 +14,15 @@
 	export let classList;
 </script>
 
+<svelte:head>
+	<title>Profesori - analistul.com</title>
+	<meta
+		name="description"
+		content="Descoperă care sunt cei mai buni profesori din România, dar și la nivel regional. Ia o decizie informată pentru viitorul copilului tău."
+	/>
+	<link rel="canonical" href="https://analistul.com/profesori" />
+</svelte:head>
+
 <main>
 	<h1>Profesori</h1>
 	<div class="contextual">
