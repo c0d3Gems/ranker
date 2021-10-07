@@ -15,7 +15,7 @@
 </script>
 
 <main>
-	<h1>Profesori (top 50 la nivel național)</h1>
+	<h1>Profesori (listă completă)</h1>
 	<div class="contextual">
 		<nav>
 			<a href="/profesori">Profesori</a>

@@ -1,9 +1,11 @@
 <script context="module">
 	export async function load({ page, fetch }) {
+		const { classId } = page?.params;
 		const classListFetch = await fetch('http://localhost:3000/classes.json');
 		const classList = await classListFetch.json();
 		return {
 			props: {
+				classId,
 				classList
 			}
 		};
@@ -11,11 +13,12 @@
 </script>
 
 <script>
+	export let classId;
 	export let classList;
 </script>
 
 <main>
-	<h1>Profesori (top 50 la nivel național)</h1>
+	<h1>Top profesori de {classList[classId]}</h1>
 	<div class="contextual">
 		<nav>
 			<a href="/profesori">Profesori</a>

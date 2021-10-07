@@ -10,3 +10,17 @@ body {
 	padding: 0;
 	font-family: sans-serif;
 }
+.contextual {
+	background-color: lightgray;
+	padding: 5px;
+	box-sizing: border-box;
+	font-size: 10pt;
+	line-height: 30px;
+}
+
+.contextual nav > * {
+	margin: 0 5px;
+}
+main > h1 {
+	text-indent: 30px;
+}
