@@ -1,7 +1,7 @@
 <script context="module">
 	export async function load({ page, fetch }) {
 		const { classId } = page?.params;
-		const classListFetch = await fetch('http://localhost:3000/classes.json');
+		const classListFetch = await fetch('https://analistul.com/classes.json');
 		const classList = await classListFetch.json();
 		return {
 			props: {
@@ -13,9 +13,14 @@
 </script>
 
 <script>
+	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import '../../../app.css';
 	export let classId;
 	export let classList;
 </script>
+
+<Header />
 
 <main>
 	<h1>Top profesori de {classList[classId]}</h1>
@@ -37,3 +42,4 @@
 		</nav>
 	</div>
 </main>
+<Footer />

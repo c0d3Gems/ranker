@@ -1,6 +1,6 @@
 <script context="module">
 	export async function load({ page, fetch }) {
-		const classListFetch = await fetch('http://localhost:3000/classes.json');
+		const classListFetch = await fetch('https://analistul.com/classes.json');
 		const classList = await classListFetch.json();
 		return {
 			props: {
@@ -11,6 +11,9 @@
 </script>
 
 <script>
+	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import '../../app.css';
 	export let classList;
 </script>
 
@@ -23,6 +26,7 @@
 	<link rel="canonical" href="https://analistul.com/profesori" />
 </svelte:head>
 
+<Header />
 <main>
 	<h1>Profesori</h1>
 	<div class="contextual">
@@ -43,3 +47,4 @@
 		</nav>
 	</div>
 </main>
+<Footer />

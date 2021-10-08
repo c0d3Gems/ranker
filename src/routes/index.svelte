@@ -1,5 +1,8 @@
 <script>
 	import BigSearch from '$lib/BigSearch.svelte';
+	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import '../app.css';
 </script>
 
 <svelte:head>
@@ -11,12 +14,14 @@
 	<link rel="canonical" href="https://analistul.com/" />
 </svelte:head>
 
+<Header />
 <main>
 	<div class="centered">
 		<h1>Informații analitice, despre România</h1>
 		<center><BigSearch /></center>
 	</div>
 </main>
+<Footer />
 
 <style>
 	.centered {
