@@ -17,6 +17,10 @@ body {
 	font-size: 10pt;
 	line-height: 30px;
 }
+.contextual nav {
+	white-space: break-spaces;
+	word-break: break-all;
+}
 
 .contextual nav > * {
 	margin: 0 5px;
