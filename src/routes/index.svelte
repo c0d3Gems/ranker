@@ -25,7 +25,7 @@
 
 <style>
 	.centered {
-		position: fixed;
+		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;

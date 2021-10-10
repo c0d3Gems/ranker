@@ -28,7 +28,6 @@
 <style>
 	.content {
 		max-width: 75em;
-		/* background-color: lightgray; */
 		padding: 15px;
 		box-sizing: border-box;
 		min-height: calc(100vh - 180px);
