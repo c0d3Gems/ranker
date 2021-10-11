@@ -47,8 +47,9 @@
 		background-position: center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-		width: 100vw;
+		max-width: 100vw;
 		height: calc(100vh - 60px);
 		text-align: center;
+		overflow-x: hidden;
 	}
 </style>
