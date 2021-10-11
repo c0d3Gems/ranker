@@ -29,6 +29,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;
+		width: 100vw;
 	}
 	h1 {
 		font-size: 72px;
@@ -38,7 +39,7 @@
 		-webkit-text-fill-color: transparent;
 		margin: 20px;
 		display: inline-block;
-		width: 100vw;
+		width: fit-content;
 	}
 	main {
 		background-image: url('/charts.jpg');

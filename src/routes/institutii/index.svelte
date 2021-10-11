@@ -1,7 +1,7 @@
 <script>
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import '../app.css';
+	import '../../app.css';
 </script>
 
 <Header />
@@ -9,9 +9,9 @@
 	<h1>Instituții de învățământ</h1>
 	<div class="contextual">
 		<nav>
-			<a href="/cadre-didactice">Instituții</a>
-			<a href="/gradinite/ordine-alfabetica">Ordine alfabetică</a>
-			<a href="/gradinite/top-100-national">Top 100 național</a>
+			<a href="/institutii">Instituții</a>
+			<a href="/institutii/ordine-alfabetica">Ordine alfabetică</a>
+			<a href="/institutii/top-100-national">Top 100 național</a>
 		</nav>
 	</div>
 	<div class="content">

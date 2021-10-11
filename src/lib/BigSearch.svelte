@@ -9,7 +9,7 @@
 </script>
 
 <input
-	placeholder="Caută profesor, școală, instituție"
+	placeholder="Caută profesor, instituție școlară, județ"
 	type="search"
 	aria-label="Caută"
 	bind:value={searchValue}
