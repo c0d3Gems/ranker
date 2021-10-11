@@ -3,6 +3,11 @@
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import '../app.css';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		window.document.body.style = 'overflow-x: hidden;';
+	});
 </script>
 
 <svelte:head>
@@ -32,7 +37,7 @@
 		width: 100vw;
 	}
 	h1 {
-		font-size: 72px;
+		font-size: 5vw;
 		background: -webkit-linear-gradient(45deg, #ec4895, #f59b0d);
 		-webkit-background-clip: text;
 		background-clip: text;
