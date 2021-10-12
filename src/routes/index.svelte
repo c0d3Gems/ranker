@@ -4,7 +4,6 @@
 	import Footer from '$lib/Footer.svelte';
 	import '../app.css';
 	import { onMount } from 'svelte';
-
 	onMount(() => {
 		window.document.body.style = 'overflow-x: hidden;';
 	});

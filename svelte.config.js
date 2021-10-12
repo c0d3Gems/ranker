@@ -1,13 +1,16 @@
 // svelte.config.js
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-node';
 
 export default {
 	kit: {
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: null
-		}),
-		appDir: 'app'
+			// default options are shown
+			out: 'build',
+			precompress: false,
+			env: {
+				host: 'HOST',
+				port: 'PORT'
+			}
+		})
 	}
 };

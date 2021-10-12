@@ -2,9 +2,14 @@
 	let searchValue;
 	let results;
 	const findSuggestions = async () => {
-		const result = await fetch(`/search/`);
+		if (!searchValue) {
+			results = undefined;
+			return;
+		}
+		const result = await fetch(`/search/${searchValue}`);
 		const json = await result.json();
 		results = json;
+		console.log(results);
 	};
 </script>
 
@@ -16,12 +21,24 @@
 	on:keyup={findSuggestions}
 />
 {#if results}
-	{#each results as r}
-		<div>{r.name}</div>
-	{/each}
+	<div class="results">
+		{#each results as r}
+			<a href="/institutii/{r.id}">
+				<div class="r">
+					{r.institutie}
+					<span class="right">
+						&bullet; {r.judet}
+					</span>
+				</div>
+			</a>
+		{/each}
+	</div>
 {/if}
 
 <style>
+	span.right {
+		float: right;
+	}
 	input[type='search'] {
 		appearance: search;
 		-webkit-appearance: search;
@@ -32,6 +49,19 @@
 		font-size: 14pt;
 		padding: 10px 25px;
 		min-width: 200px;
-		width: 33vw;
+		width: 60vw;
+	}
+	.results {
+		background-color: white;
+		text-align: left;
+		box-sizing: border-box;
+		padding: 5px 10px;
+		max-height: 40vh;
+		overflow-y: auto;
+		width: 60vw;
+		font-size: 10pt;
+	}
+	.r {
+		margin: 5px 10px;
 	}
 </style>

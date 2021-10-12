@@ -35,8 +35,6 @@ const pool = new Pool({
 	port: 5432
 });
 
-await pool.connect();
-
 const insertCounties = async () => {
 	const judete_string =
 		'["Bucureşti","Alba","Arad","Arges","Bacău","Bihor","Bistriţa-Năsăud","Botoşani","Braşov","Brăila","Buzău","Caraş-Severin","Călăraşi","Cluj","Constanţa","Covasna","Dâmboviţa","Dolj","Galaţi","Giurgiu","Gorj","Harghita","Hunedoara","Ialomiţa","Iaşi","Ilfov","Maramureş","Mehedinţi","Mureş","Neamţ","Olt","Prahova","Satu Mare","Sălaj","Sibiu","Suceava","Teleorman","Timiş","Tulcea","Vâlcea","Vaslui","Vrancea"]';
@@ -56,8 +54,25 @@ getCounties();
 
 const insertInstitutionsIntoDatabase = async () => {
 	await pool.query('delete from institutii;');
-	const institutions = JSON.parse(fs.readFileSync('./institutions.json'));
-	console.log(institutions);
+	const institutionsRaw = JSON.parse(fs.readFileSync('./institutions.json'));
+	let institutions = [];
+	institutionsRaw.forEach((i) => {
+		let exists = false;
+		for (let c = 0; c < institutions.length; ++c) {
+			if (
+				institutions[c] &&
+				institutions[c].name === i.name &&
+				institutions[c].location === i.location
+			) {
+				exists = true;
+				break;
+			}
+		}
+		if (!exists) {
+			institutions.push(i);
+		}
+	});
+	console.log(institutions.length, institutions);
 	// const results = await pool.query('select * from judete;');
 	// console.log(results.rows);
 	for (let i = 0; i < institutions.length; ) {
@@ -81,7 +96,7 @@ const insertInstitutionsIntoDatabase = async () => {
 		// console.log(countyId.rows[0]);
 		++i;
 	}
-	console.log('done');
+	console.log('done', institutions.length);
 };
 
 insertInstitutionsIntoDatabase();
