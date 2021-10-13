@@ -1,6 +1,10 @@
 <script>
 	let searchValue;
 	let results;
+
+	const onChange = () => {
+		if (!searchValue) results = null;
+	};
 	const findSuggestions = async () => {
 		if (!searchValue) {
 			results = undefined;
@@ -9,7 +13,6 @@
 		const result = await fetch(`/search/${searchValue}`);
 		const json = await result.json();
 		results = json;
-		console.log(results);
 	};
 </script>
 
@@ -19,6 +22,7 @@
 	aria-label="Caută"
 	bind:value={searchValue}
 	on:keyup={findSuggestions}
+	on:change={onChange}
 />
 {#if results}
 	<div class="results">
