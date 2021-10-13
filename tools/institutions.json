@@ -20,6 +20,7 @@
 	{ "location": "Alba", "name": "Liceul Tehnologic Tara Motilor Albac" },
 	{ "location": "Alba", "name": "Scoala Gimnaziala Livezile" },
 	{ "location": "Alba", "name": "Scoala Gimnaziala Vadu Motilor" },
+	{ "location": "Alba", "name": "Institutul Teologic Greco-Catolic Bunavestire - Blaj" },
 	{
 		"location": "Alba",
 		"name": "Liceul Teologic Romano-catolic Grof Majlath Gusztav Karoly"
@@ -43,6 +44,7 @@
 		"name": "Gradinita Cu Program Prelungit Dumbrava Minunata Alba Iulia"
 	},
 	{ "location": "Alba", "name": "Scoala Gimnaziala Singidava Cugir" },
+	{ "location": "Alba", "name": "Universitatea 1 Decembrie 1918 Alba Iulia" },
 	{ "location": "Alba", "name": "Liceul Horea Closca Si Crisan Abrud" },
 	{
 		"location": "Alba",
@@ -215,6 +217,7 @@
 		"name": "Scoala Gimnaziala Ioan De Hunedoara Sintimbru"
 	},
 	{ "location": "Arad", "name": "Scoala Gimnaziala Adam Nicolae Arad" },
+	{ "location": "Arad", "name": "Universitatea de Vest Vasile Goldiș" },
 	{ "location": "Arad", "name": "Scoala Gimnaziala Vanatori" },
 	{ "location": "Arad", "name": "Colegiul Economic Arad" },
 	{
@@ -2022,7 +2025,19 @@
 	{ "location": "Brăila", "name": "Scoala Gimnaziala Comuna Visani" },
 	{
 		"location": "Brașov",
-		"name": "Liceul Tehnologic Silvic Dr.nicolae Rucareanu"
+		"name": "Liceul Tehnologic Silvic Dr. Nicolae Rucareanu"
+	},
+	{
+		"location": "Brașov",
+		"name": "Academia Forțelor Aeriene Henri Coandă"
+	},
+	{
+		"location": "Brașov",
+		"name": "Universitatea George Barițiu"
+	},
+	{
+		"location": "Brașov",
+		"name": "Universitatea Populară Sextil Pușcariu"
 	},
 	{
 		"location": "Brașov",
@@ -2355,6 +2370,24 @@
 		"name": "Gradinita Cu Program Prelungit Albinuta Fagaras"
 	},
 	{ "location": "București", "name": "Scoala Gimnaziala Ion I C Bratianu" },
+	{ "location": "București", "name": "Institutul de Administrare al Afacerilor" },
+	{ "location": "București", "name": "Institutul Teologic Baptist" },
+	{ "location": "București", "name": "Școala Normală Superioară" },
+	{ "location": "București", "name": "Universitatea Artifex" },
+	{ "location": "București", "name": "Universitatea Athenaeum" },
+	{ "location": "București", "name": "Universitatea Bioterra" },
+	{ "location": "București", "name": "Universitatea Creștină Dimitrie Cantemir" },
+	{ "location": "București", "name": "Universitatea Europei de Sud-Est Lumina" },
+	{ "location": "București", "name": "Universitatea Hyperion" },
+	{ "location": "București", "name": "Universitatea Nicolae Titulescu" },
+	{ "location": "București", "name": "Universitatea Spiru Haret" },
+	{ "location": "București", "name": "Universitatea Titu Maiorescu" },
+	{ "location": "București", "name": "Universitatea de Științe și Arte Gheorghe Cristea" },
+	{ "location": "București", "name": "Academia Națională de Informații Mihai Viteazul" },
+	{ "location": "București", "name": "Academia de Poliție Alexandru Ioan Cuza" },
+	{ "location": "București", "name": "Academia Tehnică Militară" },
+	{ "location": "București", "name": "Universitatea Națională de Apărare Carol I" },
+	{ "location": "București", "name": "Universitatea de Științe Agronomice și Medicină Veterinară" },
 	{ "location": "București", "name": "Colegiul National Matei Basarab" },
 	{ "location": "București", "name": "Gradinita Steaua" },
 	{
@@ -2547,7 +2580,7 @@
 	{ "location": "București", "name": "Scoala Gimnaziala Geo Bogza" },
 	{ "location": "București", "name": "Scoala Gimnaziala Nr 169" },
 	{ "location": "București", "name": "Scoala Gimnaziala Nr 136" },
-	{ "location": "București", "name": "Universitatea Romano-americana" },
+	{ "location": "București", "name": "Universitatea Româno-Americană" },
 	{ "location": "București", "name": "Scoala Gimnaziala Nr.81" },
 	{ "location": "București", "name": "Scoala Gimnaziala Nr.103" },
 	{ "location": "București", "name": "Scoala Gimnaziala Nr.46" },
@@ -3407,6 +3440,7 @@
 		"name": "Scoala Gimnaziala  Mihai Viteazul Călărași"
 	},
 	{ "location": "Caraș-Severin", "name": "Scoala Gimnaziala Armenis" },
+	{ "location": "Caraș-Severin", "name": "Universitatea Eftimie Murgu" },
 	{
 		"location": "Caraș-Severin",
 		"name": "Scoala Postliceala Sanitara  Banatul  Caransebes"
@@ -3678,7 +3712,12 @@
 		"location": "Caraș-Severin",
 		"name": "Gradinita Cu Program Normal Pinocchio"
 	},
+	{ "location": "Cluj", "name": "Institutul Teologic Protestant" },
+	{ "location": "Cluj", "name": "Universitatea Avram Iancu" },
+	{ "location": "Cluj", "name": "Universitatea Bogdan Vodă" },
+	{ "location": "Cluj", "name": "Universitatea Sapientia" },
 	{ "location": "Cluj", "name": "Scoala Gimnaziala Buza" },
+	{ "location": "Cluj", "name": "Universitatea Babeș-Bolyai" },
 	{ "location": "Cluj", "name": "Academia Romana Filiala Cluj" },
 	{ "location": "Cluj", "name": "Scoala  Gimnaziala Mociu" },
 	{ "location": "Cluj", "name": "Academia De Muzica Gheorghe Dima" },
@@ -3790,10 +3829,6 @@
 		"name": "Scoala Gimnaziala George Baritiu Jucu De Sus"
 	},
 	{ "location": "Cluj", "name": "Scoala Gimnaziala Mircea Luca Baisoara" },
-	{
-		"location": "Cluj",
-		"name": "Universitatea De Arta Si Design Cluj-napoca"
-	},
 	{ "location": "Cluj", "name": "Liceul Teoretic  Brassai  Samuel" },
 	{ "location": "Cluj", "name": "Scoala Gimnaziala Ceanu Mare" },
 	{
@@ -4091,6 +4126,18 @@
 	{
 		"location": "Constanța",
 		"name": "Scoala Gimnaziala George Cosbuc 23 August"
+	},
+	{
+		"location": "Constanța",
+		"name": "Universitatea Andrei Șaguna"
+	},
+	{
+		"location": "Constanța",
+		"name": "Universitatea Maritimă"
+	},
+	{
+		"location": "Constanța",
+		"name": "Academia Navală Micrea cel Bătrân"
 	},
 	{
 		"location": "Constanța",
@@ -4694,6 +4741,7 @@
 		"name": "Liceul Tehnologic De Transporturi Auto Targoviste"
 	},
 	{ "location": "Dâmbovița", "name": "Scoala Gimnaziala Valea Mare" },
+	{ "location": "Dâmbovița", "name": "Universitatea Valahia" },
 	{ "location": "Dâmbovița", "name": "Gradinita Prichindel" },
 	{ "location": "Dâmbovița", "name": "Scoala Gimnaziala Razvad" },
 	{
@@ -4973,6 +5021,8 @@
 	{ "location": "Dolj", "name": "Scoala Gimnaziala Cerat" },
 	{ "location": "Dolj", "name": "Liceul Teoretic Adrian Paunescu Barca" },
 	{ "location": "Dolj", "name": "Scoala Gimnaziala  Cosoveni" },
+	{ "location": "Dolj", "name": "Universitatea Din Craiova" },
+	{ "location": "Dolj", "name": "Universitatea Mihai Viteazul" },
 	{
 		"location": "Dolj",
 		"name": "Liceul Tehnologic Ucecom Spiru Haret Craiova"
@@ -5355,6 +5405,7 @@
 	{ "location": "Galați", "name": "Scoala Gimnaziala Miron Costin" },
 	{ "location": "Galați", "name": "Scoala Gimnaziala Nr.1 Umbraresti" },
 	{ "location": "Galați", "name": "Scoala Gimnaziala Unirea Branistea" },
+	{ "location": "Galați", "name": "Universitatea Danubius" },
 	{
 		"location": "Galați",
 		"name": "Scoala Gimnaziala Elena Doamna Cuza Voda"
@@ -6312,6 +6363,7 @@
 		"name": "Liceul Tehnologic Grigore Moisil Deva"
 	},
 	{ "location": "Hunedoara", "name": "Scoala Gimnaziala Harau" },
+	{ "location": "Hunedoara", "name": "Universitatea Ecologică Traian" },
 	{ "location": "Hunedoara", "name": "Scoala Primara Pricaz" },
 	{
 		"location": "Hunedoara",
@@ -6616,7 +6668,14 @@
 		"name": "Liceul Tehnologic Areta Teodorescu Grivita"
 	},
 	{ "location": "Iași", "name": "Colegiul National Garabet Ibraileanu Iași" },
+	{ "location": "Iași", "name": "Institutul de Studii Europene" },
+	{ "location": "Iași", "name": "Universitatea Apollonia" },
+	{ "location": "Iași", "name": "Universitatea Petre Andrei" },
+	{ "location": "Iași", "name": "Universitatea Gheorghe Zane" },
+	{ "location": "Iași", "name": "Institutul Teologic Romano-Catolic Sfântul Iosif" },
+	{ "location": "Iași", "name": "Universitatea Națională de Arte George Enescu" },
 	{ "location": "Iași", "name": "Scoala Gimnaziala Ion Haulica Ipatele" },
+	{ "location": "Iași", "name": "Universitatea de Medicină și Farmacie Grigore T. Popa" },
 	{
 		"location": "Iași",
 		"name": "Scoala Gimnaziala Iordache Cantacuzino Pascani"
@@ -6952,7 +7011,7 @@
 	},
 	{
 		"location": "Iași",
-		"name": "Universitatea De Stiinte Agricole Si Medicina Veterinara Ion Ionescu Dela Brad Iași"
+		"name": "Universitatea De Stiinte Agricole Si Medicina Veterinara Ion Ionescu De la Brad Iași"
 	},
 	{ "location": "Iași", "name": "Scoala Gimnaziala Costuleni" },
 	{ "location": "Iași", "name": "Scoala Gimnaziala George Cosbuc Iași" },
@@ -7080,6 +7139,14 @@
 	{
 		"location": "Maramureș",
 		"name": "Liceul Teoretic George Pop De Baseşti Baia Mare"
+	},
+	{
+		"location": "Maramureș",
+		"name": "Universitatea de Arte Vatra"
+	},
+	{
+		"location": "Maramureș",
+		"name": "Universitatea Tehnică Baia Mare"
 	},
 	{ "location": "Maramureș", "name": "Scoala Gimnaziala Coroieni" },
 	{ "location": "Maramureș", "name": "Liceul Borsa" },
@@ -7607,6 +7674,10 @@
 	{ "location": "Mureș", "name": "Scoala Gimnaziala Cristesti" },
 	{
 		"location": "Mureș",
+		"name": "Universitatea de Medicină, Farmacie, Știință și Tehnologie George Emil Palade"
+	},
+	{
+		"location": "Mureș",
 		"name": "Scoala Gimnaziala Europa Municipiul Targu Mureș"
 	},
 	{ "location": "Mureș", "name": "Scoala Gimnaziala Comuna Sarateni" },
@@ -7722,7 +7793,7 @@
 	},
 	{
 		"location": "Mureș",
-		"name": "Liceul Tehnologic Aurel Persu Municipiul Tirgu Mureș"
+		"name": "Liceul Tehnologic Aurel Persu Municipiul Târgu Mureș"
 	},
 	{ "location": "Mureș", "name": "Scoala Gimnaziala Vatava" },
 	{ "location": "Mureș", "name": "Scoala Gimnaziala Sau Lia" },
@@ -7745,7 +7816,7 @@
 		"name": "Scoala Gimnaziala Teleki Domokos Comuna Gornesti"
 	},
 	{ "location": "Mureș", "name": "Scoala Gimnaziala Comuna Pogaceaua" },
-	{ "location": "Mureș", "name": "Universitatea De Arte Din Tirgu Mureș" },
+	{ "location": "Mureș", "name": "Universitatea De Arte Din Târgu Mureș" },
 	{
 		"location": "Mureș",
 		"name": "Scoala Gimnaziala Seulia De Mureș Comuna Cucerdea"
@@ -7798,7 +7869,7 @@
 		"name": "Liceul Teoretic Gheorghe Marinescu Municipiul Targu Mureș"
 	},
 	{ "location": "Mureș", "name": "Scoala Gimnaziala Comuna Coroisinmartin" },
-	{ "location": "Mureș", "name": "Universitatea De Arte Din Tirgu Mureș" },
+	{ "location": "Mureș", "name": "Universitatea De Arte Din Târgu Mureș" },
 	{ "location": "Mureș", "name": "Scoala Gimnaziala Pataky Agotha" },
 	{
 		"location": "Mureș",
@@ -7998,6 +8069,7 @@
 	},
 	{ "location": "Neamț", "name": "Scoala Cu Clasele I - Viii Mastacan" },
 	{ "location": "Neamț", "name": "Colegiul Tehnic Forestier" },
+	{ "location": "Neamț", "name": "Grupul Școlar Economic-Administrativ Piatra Neamț" },
 	{ "location": "Neamț", "name": "Colegiul Național de Informatică Piatra Neamț" },
 	{ "location": "Neamț", "name": "Colegiul Național Petru Rareș" },
 	{ "location": "Neamț", "name": "Scoala Gimnaziala Comuna Bodesti" },
@@ -8714,6 +8786,7 @@
 		"name": "Liceul Tehnologic De Transporturi Municipiul Ploiesti"
 	},
 	{ "location": "Prahova", "name": "Scoala Gimnaziala Comuna Brazi" },
+	{ "location": "Prahova", "name": "Universitatea Petrol-Gaze" },
 	{
 		"location": "Prahova",
 		"name": "Gradinita Cu Program Prelungit Nr.2 Comuna Filipestii De Padure"
@@ -9627,6 +9700,10 @@
 	{
 		"location": "Sibiu",
 		"name": "Liceul Tehnologic Nicolae Teclu Copsa Mica"
+	},
+	{
+		"location": "Sibiu",
+		"name": "Academia Forțelor Terestre Nicolae Bălcescu"
 	},
 	{
 		"location": "Sibiu",
@@ -10557,8 +10634,10 @@
 	{ "location": "Teleorman", "name": "Scoala Gimnaziala" },
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Iecea Mare" },
 	{ "location": "Timiș", "name": "Academia Romana Filiala Timișoara" },
+	{ "location": "Timiș", "name": "Universitatea de Medicina și Farmacie Victor Babeș" },
+	{ "location": "Timiș", "name": "Universitatea De Vest" },
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Nr. 30 Timișoara" },
-	{ "location": "Timiș", "name": "Universitatea Politeh Nica Timișoara" },
+	{ "location": "Timiș", "name": "Universitatea Politehnica Timișoara" },
 	{
 		"location": "Timiș",
 		"name": "Colegiul Tehnic Energetic Regele Ferdinand I"
@@ -10599,7 +10678,7 @@
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Nr. 30 Timișoara" },
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Nr.16 Take Ionescu" },
 	{ "location": "Timiș", "name": "Colegiul Tehnic Ion I.c.bratianu" },
-	{ "location": "Timiș", "name": "Scoala Gimnaziala „eftimie Murgu„ Lugoj" },
+	{ "location": "Timiș", "name": "Scoala Gimnaziala Eftimie Murgu Lugoj" },
 	{ "location": "Timiș", "name": "Universitatea Tibiscus" },
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Nitchidorf" },
 	{ "location": "Timiș", "name": "Liceul Teoretic Special  Iris" },
@@ -10633,7 +10712,7 @@
 	{ "location": "Timiș", "name": "Gradinita Cu Program Prelungit Nr.33" },
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Nr.16 Take Ionescu" },
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Comuna Belint" },
-	{ "location": "Timiș", "name": "Scoala Gimnaziala „eftimie Murgu„ Lugoj" },
+	{ "location": "Timiș", "name": "Scoala Gimnaziala Eftimie Murgu Lugoj" },
 	{
 		"location": "Timiș",
 		"name": "Gradinita Cu Program Prelungit Nt.14 Timișoara"
@@ -10679,7 +10758,7 @@
 	},
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Nr.16 Take Ionescu" },
 	{ "location": "Timiș", "name": "Scoala Gimnaziala Comuna Saravale" },
-	{ "location": "Timiș", "name": "Scoala Gimnaziala „eftimie Murgu„ Lugoj" },
+	{ "location": "Timiș", "name": "Scoala Gimnaziala Eftimie Murgu Lugoj" },
 	{
 		"location": "Timiș",
 		"name": "Gradinita Cu Program Prelungit Nikolaus Lenau"
