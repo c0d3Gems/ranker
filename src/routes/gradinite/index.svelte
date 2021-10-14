@@ -22,6 +22,7 @@
 <script>
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import Pagination from '$lib/Pagination.svelte';
 	import '../../app.css';
 
 	export let gradinite;
@@ -62,6 +63,7 @@
 				{/each}
 			</tbody>
 		</table>
+		<Pagination {count} ipp={30} baseUrl={'/gradinite/p/'} />
 	</div>
 </main>
 <Footer />

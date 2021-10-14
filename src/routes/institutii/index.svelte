@@ -16,7 +16,8 @@
 	</div>
 	<div class="content">
 		<a href="/gradinite">Grădinițe</a>
-		<a href="/scoli">Școli</a>
+		<a href="/scoli">Școli Gimnaziale</a>
+		<a href="/colegii">Colegii</a>
 		<a href="/licee">Licee</a>
 		<a href="/postliceale">Postliceale</a>
 		<a href="/universitati">Universități</a>
