@@ -10,7 +10,6 @@
 	<div class="contextual">
 		<nav>
 			<a href="/institutii">Instituții</a>
-			<a href="/institutii/ordine-alfabetica">Ordine alfabetică</a>
 			<a href="/institutii/top-100-national">Top 100 național</a>
 		</nav>
 	</div>

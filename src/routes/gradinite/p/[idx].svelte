@@ -68,9 +68,9 @@
 						</td></tr
 					>
 				{/each}
-				<Pagination {count} ipp={30} baseUrl={'/gradinite/p/'} />
 			</tbody>
 		</table>
+		<Pagination {count} ipp={30} baseUrl={'/gradinite/p/'} />
 	</div>
 </main>
 <Footer />

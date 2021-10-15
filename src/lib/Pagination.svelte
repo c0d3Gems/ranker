@@ -27,11 +27,10 @@
 <style>
 	div {
 		text-align: center;
-		width: 100vw;
 		max-width: 75em;
 		margin: 40px 0 20px 0;
 	}
 	a {
-		margin: 5px 10px;
+		margin: 5px 2px;
 	}
 </style>

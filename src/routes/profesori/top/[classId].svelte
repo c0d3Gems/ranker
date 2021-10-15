@@ -27,7 +27,6 @@
 	<div class="contextual">
 		<nav>
 			<a href="/profesori">Profesori</a>
-			<a href="/profesori/ordine-alfabetica">Ordine alfabetică</a>
 			<a href="/profesori/top-national">Clasament național</a>
 			<a href="/profesori/top-50-national">Top 50 național</a>
 			<a href="/profesori/top-100-national">Top 100 național</a>
