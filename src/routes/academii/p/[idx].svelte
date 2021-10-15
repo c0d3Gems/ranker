@@ -1,19 +1,21 @@
 <script context="module">
 	export async function load({ page, fetch }) {
+		const { idx } = page.params;
 		const options = {
 			method: 'get',
 			headers: {
 				'Content-Type': 'application/json'
 			}
 		};
-		const result = await fetch('/api/scoli', options);
-		const countRequest = await fetch('/api/scoli/count');
+		const result = await fetch(`/api/academii/${idx}`, options);
+		const countRequest = await fetch('/api/academii/count');
 		const items = await result.json();
 		const { count } = await countRequest.json();
 		return {
 			props: {
 				items,
-				count
+				count,
+				idx
 			}
 		};
 	}
@@ -23,23 +25,28 @@
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Pagination from '$lib/Pagination.svelte';
-	import '../../app.css';
+	import '../../../app.css';
+	import { onMount } from 'svelte';
 
 	export let items;
 	export let count;
+
+	onMount(() => {
+		console.log('idx', idx);
+	});
 </script>
 
 <svelte:head>
-	<title>Școli</title>
-	<meta name="description" content="Descoperă care sunt cele mai bune școli din orașul tău!" />
+	<title>Academii</title>
+	<meta name="description" content="Descoperă care sunt cele mai bune academii din Romania!" />
 </svelte:head>
 <Header />
 <main>
-	<h1>Școli</h1>
+	<h1>Academii</h1>
 	<div class="contextual">
 		<nav>
-			<a href="/scoli">Școli</a>
-			<a href="/scoli/top-100-national">Top 100 național</a>
+			<a href="/academii">Academii</a>
+			<a href="/academii/top-100-national">Top 100 național</a>
 		</nav>
 	</div>
 	<div class="content">
@@ -63,7 +70,7 @@
 				{/each}
 			</tbody>
 		</table>
-		<Pagination {count} ipp={30} baseUrl={'/scoli/p/'} />
+		<Pagination {count} ipp={30} baseUrl={'/academii/p/'} />
 	</div>
 </main>
 <Footer />

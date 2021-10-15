@@ -1,19 +1,21 @@
 <script context="module">
 	export async function load({ page, fetch }) {
+		const { idx } = page.params;
 		const options = {
 			method: 'get',
 			headers: {
 				'Content-Type': 'application/json'
 			}
 		};
-		const result = await fetch('/api/scoli', options);
+		const result = await fetch(`/api/scoli/${idx}`, options);
 		const countRequest = await fetch('/api/scoli/count');
 		const items = await result.json();
 		const { count } = await countRequest.json();
 		return {
 			props: {
 				items,
-				count
+				count,
+				idx
 			}
 		};
 	}
@@ -23,10 +25,15 @@
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Pagination from '$lib/Pagination.svelte';
-	import '../../app.css';
+	import '../../../app.css';
+	import { onMount } from 'svelte';
 
 	export let items;
 	export let count;
+
+	onMount(() => {
+		console.log('idx', idx);
+	});
 </script>
 
 <svelte:head>

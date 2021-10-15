@@ -1,8 +1,6 @@
 <script>
 	export let count;
 	export let ipp;
-	export let nextLink;
-	export let previousLink;
 	export let baseUrl;
 	export let currentPage;
 
@@ -16,11 +14,17 @@
 
 <div>
 	<nav>
-		<a href={baseUrl}> &lt; </a>
+		{#if currentPage > 0}
+			<a href="{baseUrl}{currentPage - 1}"> &lt; </a>
+		{/if}
 		{#each urls as url, i}
 			<a href={url}>{i + 1}</a>
 		{/each}
-		<a href={baseUrl}> &gt; </a>
+		{#if !currentPage}
+			<a href="{baseUrl}1"> &gt; </a>
+		{:else}
+			<a href="{baseUrl}{currentPage + 1}"> &gt; </a>
+		{/if}
 	</nav>
 </div>
 
