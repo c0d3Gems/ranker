@@ -21,6 +21,12 @@
 			<a href="/profesori">Profesori</a>
 		</div>
 		<div class="col">
+			<h2>Altele</h2>
+			<a href="/autentificare">Autentificare</a>
+			<a href="/confidentialitate">Politica de Confidențialitate & Cookie</a>
+			<a href="/termeni-si-conditii">Termeni & Condiții</a>
+		</div>
+		<div class="col">
 			<a href="/blog"> <h2>Blog</h2></a>
 		</div>
 	</div>

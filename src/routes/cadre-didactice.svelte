@@ -10,7 +10,7 @@
 	<div class="contextual">
 		<nav>
 			<a href="/cadre-didactice">Cadre Didactice</a>
-			<a href="/gradinite/top-100-national">Top 100 național</a>
+			<a href="/cd/top-100-national">Top 100 național</a>
 		</nav>
 	</div>
 	<div class="content">

@@ -1,26 +1,27 @@
 <script>
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import '../../app.css';
+	import '../../../app.css';
 </script>
+
+<svelte:head>
+	<title>Top Profesori</title>
+	<meta name="description" content="Descopera top cei mai buni profesori la nivel național" />
+</svelte:head>
 
 <Header />
 <main>
-	<h1>Instituții de învățământ - clasament</h1>
+	<h1>Top Profesori</h1>
 	<div class="contextual">
 		<nav>
-			<a href="/institutii">Instituții</a>
-			<a href="/institutii/top-100-national">Top 100 național</a>
+			<a href="/cadre-didactice">Cadre Didactice</a>
+			<a href="/cd/top-100-national">Top 100 național</a>
 		</nav>
 	</div>
 	<div class="content">
-		<a href="/gradinite">Grădinițe</a>
-		<a href="/scoli">Școli Gimnaziale</a>
-		<a href="/colegii">Colegii</a>
-		<a href="/licee">Licee</a>
-		<a href="/postliceale">Postliceale</a>
-		<a href="/universitati">Universități</a>
-		<a href="/academii">Academii</a>
+		<!-- <a href="/cd/top/invatatori">Învățători</a>
+		<a href="/cd/top/educatori">Educatori</a>
+		<a href="/cd/top/profesori">Profesori</a> -->
 	</div>
 </main>
 <Footer />

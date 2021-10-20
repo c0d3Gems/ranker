@@ -30,6 +30,7 @@
 
 	export let gradinite;
 	export let count;
+	export let idx;
 
 	onMount(() => {
 		console.log('idx', idx);
@@ -70,7 +71,7 @@
 				{/each}
 			</tbody>
 		</table>
-		<Pagination {count} ipp={30} baseUrl={'/gradinite/p/'} />
+		<Pagination {count} ipp={30} baseUrl={'/gradinite/p/'} currentPage={idx} />
 	</div>
 </main>
 <Footer />

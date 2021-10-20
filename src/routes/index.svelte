@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>Analistul - statistici despre România</title>
+	<title>Analistul - Statistici despre România</title>
 	<meta
 		name="description"
 		content="Ia o decizia corectă, bazată pe informațiile și recenziile românilor."
@@ -52,8 +52,13 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		max-width: 100vw;
-		height: calc(100vh - 60px);
 		text-align: center;
 		overflow-x: hidden;
+		width: 100vw;
+		position: relative;
+		min-height: 100vh;
+		background-color: black;
+		margin-top: 0;
+		padding-top: 0;
 	}
 </style>

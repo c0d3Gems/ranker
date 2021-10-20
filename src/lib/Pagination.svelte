@@ -15,7 +15,7 @@
 <div>
 	<nav>
 		{#if currentPage > 0}
-			<a href="{baseUrl}{currentPage - 1}"> &lt; </a>
+			<a href="{baseUrl}{Number(currentPage) - 1}"> &lt; </a>
 		{/if}
 		{#each urls as url, i}
 			<a href={url}>{i + 1}</a>
@@ -23,7 +23,7 @@
 		{#if !currentPage}
 			<a href="{baseUrl}1"> &gt; </a>
 		{:else}
-			<a href="{baseUrl}{currentPage + 1}"> &gt; </a>
+			<a href="{baseUrl}{(Number(currentPage) < numberOfPages - 1) * currentPage + 1}"> &gt; </a>
 		{/if}
 	</nav>
 </div>

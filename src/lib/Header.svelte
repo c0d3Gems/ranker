@@ -1,5 +1,30 @@
 <script>
 	let showcontextual = false;
+	import { onMount } from 'svelte';
+	onMount(async () => {
+		// if (!window.googleSignIn) {
+		// 	window.googleSignIn = async (googleUser) => {
+		// 		console.log(googleUser);
+		// 		// do stuff here
+		// 		// const responsePayload = decodeJwtResponse(response.credential);
+		// 		// console.log('ID: ' + responsePayload.sub);
+		// 		// console.log('Full Name: ' + responsePayload.name);
+		// 		// console.log('Given Name: ' + responsePayload.given_name);
+		// 		// console.log('Family Name: ' + responsePayload.family_name);
+		// 		// console.log('Image URL: ' + responsePayload.picture);
+		// 		// console.log('Email: ' + responsePayload.email);
+		// 		// console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		// 	};
+		// }
+		// if (!window.googleSignOut) {
+		// 	window.googleSignOut = () => {
+		// 		var auth2 = gapi.auth2.getAuthInstance();
+		// 		auth2.signOut().then(function () {
+		// 			console.log('User signed out.');
+		// 		});
+		// 	};
+		// }
+	});
 </script>
 
 <header>
@@ -8,6 +33,7 @@
 		<a href="/institutii">Instituții de învățământ</a>
 		<a href="/cadre-didactice">Cadre didactice</a>
 		<a href="/blog">Blog</a>
+		<a href="/login">Autentificare</a>
 	</nav>
 </header>
 
@@ -15,11 +41,14 @@
 	header {
 		padding: 15px;
 		box-sizing: border-box;
-		width: 100%;
-		min-height: 60px;
+		width: 100vw;
 		background: black;
 		color: white;
 		z-index: 1;
+		margin: 0;
+		position: fixed;
+		height: 60px;
+		top: 0;
 	}
 	h2 {
 		display: inline-block;
@@ -32,7 +61,7 @@
 	nav {
 		float: right;
 		position: relative;
-		top: 4px;
+		top: 5px;
 	}
 	h2,
 	nav {

@@ -38,3 +38,6 @@ table {
 .fa.fa-star.checked {
 	color: orange;
 }
+main {
+	margin-top: 80px;
+}
