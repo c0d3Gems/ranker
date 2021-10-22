@@ -20,258 +20,273 @@
 <Header />
 <main>
 	<div class="content">
-		<h2><strong>Terms and Conditions</strong></h2>
+		<h2><strong>Termeni și Condiții</strong></h2>
 
-		<p>Welcome to analistul.com!</p>
+		<p>Bine ați venit la analistul.com!</p>
 
 		<p>
-			These terms and conditions outline the rules and regulations for the use of Analistul's
-			Website, located at https://analistul.com.
+			Acești termeni și condiții conturează regulile și reglementările pentru utilizarea
+			website-ului Analistul, situat la https://analistul.com.
 		</p>
 
 		<p>
-			By accessing this website we assume you accept these terms and conditions. Do not continue to
-			use analistul.com if you do not agree to take all of the terms and conditions stated on this
-			page.
+			Accesând acest site web presupunem că acceptați acești termeni și condiții. Nu continuați
+			utilizați analistul.com dacă nu sunteți de acord să luați toți termenii și condițiile
+			menționate în acest sens pagină.
 		</p>
 
 		<p>
-			The following terminology applies to these Terms and Conditions, Privacy Statement and
-			Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log
-			on this website and compliant to the Company’s terms and conditions. "The Company",
-			"Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers
-			to both the Client and ourselves. All terms refer to the offer, acceptance and consideration
-			of payment necessary to undertake the process of our assistance to the Client in the most
-			appropriate manner for the express purpose of meeting the Client’s needs in respect of
-			provision of the Company’s stated services, in accordance with and subject to, prevailing law
-			of Netherlands. Any use of the above terminology or other words in the singular, plural,
-			capitalization and/or he/she or they, are taken as interchangeable and therefore as referring
-			to same.
+			Următoarea terminologie se aplică acestor Termeni și condiții, Declarație de confidențialitate
+			și Notificare de renunțare și toate acordurile: „Client”, „Tu” și „Tu” se referă la tine,
+			jurnalul de persoane pe acest site web și respectând termenii și condițiile Companiei.
+			"Compania", „Noi”, „Noi”, „Noi” și „Noi”, se referă la Compania noastră. Se referă „partid”,
+			„părți” sau „noi” atât pentru Client, cât și pentru noi înșine. Toți termenii se referă la
+			ofertă, acceptare și considerare de plată necesară pentru a efectua cel mai mult procesul de
+			asistență pentru Client o manieră adecvată în scopul expres de a răspunde nevoilor Clientului
+			în ceea ce privește furnizarea serviciilor declarate ale companiei, în conformitate cu
+			legislația în vigoare și sub rezerva acesteia din Olanda. Orice utilizare a terminologiei de
+			mai sus sau alte cuvinte în singular, plural, capitalizarea și / sau el / ea sau ei, sunt
+			luate ca interschimbabile și, prin urmare, ca referință la fel.
 		</p>
 
 		<h3><strong>Cookies</strong></h3>
 
 		<p>
-			We employ the use of cookies. By accessing analistul.com, you agreed to use cookies in
-			agreement with the Analistul's Privacy Policy.
+			Utilizăm cookie-uri. Accesând analistul.com, ați acceptat să utilizați cookie-uri în acord cu
+			<a href="/confidentialitate">Politica de confidențialitate a Analistul</a>.
 		</p>
 
 		<p>
-			Most interactive websites use cookies to let us retrieve the user’s details for each visit.
-			Cookies are used by our website to enable the functionality of certain areas to make it easier
-			for people visiting our website. Some of our affiliate/advertising partners may also use
-			cookies.
+			Majoritatea site-urilor web interactive folosesc cookie-uri pentru a ne permite să preluăm
+			detaliile utilizatorului pentru fiecare vizită. Cookie-urile sunt utilizate de site-ul nostru
+			web pentru a permite funcționalitatea anumitor zone pentru a le facilita pentru persoanele
+			care vizitează site-ul nostru web. Unii dintre partenerii noștri afiliați / publicitari pot
+			utiliza, de asemenea cookie-uri.
 		</p>
 
-		<h3><strong>License</strong></h3>
+		<h3><strong>Licență </strong></h3>
 
 		<p>
-			Unless otherwise stated, Analistul and/or its licensors own the intellectual property rights
-			for all material on analistul.com. All intellectual property rights are reserved. You may
-			access this from analistul.com for your own personal use subjected to restrictions set in
-			these terms and conditions.
+			Cu excepția cazului în care se prevede altfel, Analistul și / sau licențiatorii săi dețin
+			drepturile de proprietate intelectuală pentru toate materialele de pe analistul.com. Toate
+			drepturile de proprietate intelectuală sunt rezervate. Poti accesați acest lucru de la
+			analistul.com pentru propria utilizare personală supusă restricțiilor stabilite acești termeni
+			și condiții.
 		</p>
 
-		<p>You must not:</p>
+		<p>Nu trebuie:</p>
 		<ul>
-			<li>Republish material from analistul.com</li>
-			<li>Sell, rent or sub-license material from analistul.com</li>
-			<li>Reproduce, duplicate or copy material from analistul.com</li>
-			<li>Redistribute content from analistul.com</li>
+			<li>Republiați materialul de la analistul.com</li>
+			<li>Vindeți, închiriați sau sub-licențiați materiale de la analistul.com</li>
+			<li>Reproduceți, duplicați sau copiați materialul de pe analistul.com</li>
+			<li>Redistribuiți conținutul de la analistul.com</li>
 		</ul>
 		<p>
-			Parts of this website offer an opportunity for users to post and exchange opinions and
-			information in certain areas of the website. Analistul does not filter, edit, publish or
-			review Comments prior to their presence on the website. Comments do not reflect the views and
-			opinions of Analistul,its agents and/or affiliates. Comments reflect the views and opinions of
-			the person who post their views and opinions. To the extent permitted by applicable laws,
-			Analistul shall not be liable for the Comments or for any liability, damages or expenses
-			caused and/or suffered as a result of any use of and/or posting of and/or appearance of the
-			Comments on this website.
+			Părțile acestui site web oferă posibilitatea utilizatorilor de a posta și schimba opinii și
+			informații în anumite zone ale site-ului. Analistul nu filtrează, editează, publică sau
+			consultați Comentariile anterioare prezenței lor pe site-ul web. Comentariile nu reflectă
+			opiniile și opiniile lui Analistul, ale agenților și / sau ale afiliaților săi. Comentariile
+			reflectă opiniile și opiniile din persoana care își postează opiniile și opiniile. În măsura
+			permisă de legile aplicabile, Analistul nu va fi răspunzător pentru observații sau pentru
+			nicio răspundere, daune sau cheltuieli cauzate și / sau suferite ca urmare a utilizării și /
+			sau postării și / sau apariției Comentarii pe acest site web.
 		</p>
 
 		<p>
-			Analistul reserves the right to monitor all Comments and to remove any Comments which can be
-			considered inappropriate, offensive or causes breach of these Terms and Conditions.
+			Analistul își rezervă dreptul de a monitoriza toate comentariile și de a elimina orice
+			comentarii care pot fi considerate necorespunzătoare, jignitoare sau provoacă încălcarea
+			acestor Termeni și condiții.
 		</p>
 
-		<p>You warrant and represent that:</p>
+		<p>Garantați și reprezentați că:</p>
 
 		<ul>
 			<li>
-				You are entitled to post the Comments on our website and have all necessary licenses and
-				consents to do so;
+				Aveți dreptul să postați Comentariile pe site-ul nostru web și aveți toate licențele
+				necesare și consimte să facă acest lucru ;
 			</li>
 			<li>
-				The Comments do not invade any intellectual property right, including without limitation
-				copyright, patent or trademark of any third party;
+				Comentariile nu invadează niciun drept de proprietate intelectuală, inclusiv fără limitare
+				drepturi de autor, brevet sau marcă a oricărui terț ;
 			</li>
 			<li>
-				The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise
-				unlawful material which is an invasion of privacy
+				Comentariile nu conțin nicio defăimare, calomnie, ofensivă, indecentă sau în alt mod
+				material ilegal care este o invazie a vieții private
 			</li>
 			<li>
-				The Comments will not be used to solicit or promote business or custom or present commercial
-				activities or unlawful activity.
-			</li>
-		</ul>
-
-		<p>
-			You hereby grant Analistul a non-exclusive license to use, reproduce, edit and authorize
-			others to use, reproduce and edit any of your Comments in any and all forms, formats or media.
-		</p>
-
-		<h3><strong>Hyperlinking to our Content</strong></h3>
-
-		<p>The following organizations may link to our Website without prior written approval:</p>
-
-		<ul>
-			<li>Government agencies;</li>
-			<li>Search engines;</li>
-			<li>News organizations;</li>
-			<li>
-				Online directory distributors may link to our Website in the same manner as they hyperlink
-				to the Websites of other listed businesses; and
-			</li>
-			<li>
-				System wide Accredited Businesses except soliciting non-profit organizations, charity
-				shopping malls, and charity fundraising groups which may not hyperlink to our Web site.
+				Comentariile nu vor fi utilizate pentru a solicita sau promova afaceri sau personalizate sau
+				comerciale prezente activități sau activitate ilegală.
 			</li>
 		</ul>
 
 		<p>
-			These organizations may link to our home page, to publications or to other Website information
-			so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship,
-			endorsement or approval of the linking party and its products and/or services; and (c) fits
-			within the context of the linking party’s site.
+			Prin prezenta, acordați Analistul o licență neexclusivă pentru a utiliza, reproduce, edita și
+			autoriza alții să folosească, să reproducă și să editeze oricare dintre comentariile dvs. sub
+			orice forme, formate sau suporturi.
 		</p>
 
+		<h3><strong>Hiperlinking la conținutul nostru</strong></h3>
+
 		<p>
-			We may consider and approve other link requests from the following types of organizations:
+			Următoarele organizații se pot conecta la site-ul nostru web fără aprobarea scrisă prealabilă:
 		</p>
 
 		<ul>
-			<li>commonly-known consumer and/or business information sources;</li>
-			<li>dot.com community sites;</li>
-			<li>associations or other groups representing charities;</li>
-			<li>online directory distributors;</li>
-			<li>internet portals;</li>
-			<li>accounting, law and consulting firms; and</li>
-			<li>educational institutions and trade associations.</li>
-		</ul>
-
-		<p>
-			We will approve link requests from these organizations if we decide that: (a) the link would
-			not make us look unfavorably to ourselves or to our accredited businesses; (b) the
-			organization does not have any negative records with us; (c) the benefit to us from the
-			visibility of the hyperlink compensates the absence of Analistul; and (d) the link is in the
-			context of general resource information.
-		</p>
-
-		<p>
-			These organizations may link to our home page so long as the link: (a) is not in any way
-			deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking
-			party and its products or services; and (c) fits within the context of the linking party’s
-			site.
-		</p>
-
-		<p>
-			If you are one of the organizations listed in paragraph 2 above and are interested in linking
-			to our website, you must inform us by sending an e-mail to Analistul. Please include your
-			name, your organization name, contact information as well as the URL of your site, a list of
-			any URLs from which you intend to link to our Website, and a list of the URLs on our site to
-			which you would like to link. Wait 2-3 weeks for a response.
-		</p>
-
-		<p>Approved organizations may hyperlink to our Website as follows:</p>
-
-		<ul>
-			<li>By use of our corporate name; or</li>
-			<li>By use of the uniform resource locator being linked to; or</li>
+			<li>Agenții guvernamentale;</li>
+			<li>Motoare de căutare;</li>
+			<li>Organizații de știri;</li>
 			<li>
-				By use of any other description of our Website being linked to that makes sense within the
-				context and format of content on the linking party’s site.
+				Distribuitorii de directoare online se pot conecta la site-ul nostru web în același mod în
+				care se hyperlinkează către site-urile altor companii listate; și
+			</li>
+			<li>
+				Întreprinderi acreditate la nivel de sistem, cu excepția solicitării organizațiilor
+				non-profit, caritate centre comerciale și grupuri de strângere de fonduri de caritate care
+				nu pot face hyperlink către site-ul nostru web.
 			</li>
 		</ul>
 
 		<p>
-			No use of Analistul's logo or other artwork will be allowed for linking absent a trademark
-			license agreement.
+			Aceste organizații se pot conecta la pagina noastră de pornire, la publicații sau la alte
+			informații ale site-ului atâta timp cât legătura: (a) nu este în niciun fel înșelătoare; (b)
+			nu implică în mod fals sponsorizarea aprobarea sau aprobarea părții care leagă și a produselor
+			și / sau serviciilor sale; și (c) se potrivește în contextul site-ului părții care leagă.
+		</p>
+
+		<p>
+			Putem lua în considerare și aproba alte solicitări de legături de la următoarele tipuri de
+			organizații:
+		</p>
+
+		<ul>
+			<li>surse de informații pentru consumatori și / sau de afaceri cunoscute în mod obișnuit;</li>
+			<li>site-uri comunitare dot.com;</li>
+			<li>asociații sau alte grupuri reprezentând organizații de caritate;</li>
+			<li>distribuitori de directoare online;</li>
+			<li>portaluri de internet;</li>
+			<li>firme de contabilitate, avocatură și consultanță; și</li>
+			<li>instituții educaționale și asociații comerciale.</li>
+		</ul>
+
+		<p>
+			Vom aproba cererile de legături de la aceste organizații dacă decidem că: (a) link-ul ar fi nu
+			ne face să arătăm nefavorabil pentru noi înșine sau pentru întreprinderile noastre acreditate;
+			(b) organizarea nu are înregistrări negative la noi; (c) beneficiul pentru noi de la
+			vizibilitatea hyperlinkului compensează absența Analistul; și (d) legătura este în contextul
+			informațiilor generale despre resurse.
+		</p>
+
+		<p>
+			Aceste organizații se pot conecta la pagina noastră de pornire atât timp cât linkul: (a) nu
+			este în niciun fel înșelător; (b) nu implică în mod fals sponsorizarea, aprobarea sau
+			aprobarea legăturii petrecere și produsele sau serviciile sale; și (c) se încadrează în
+			contextul părții care leagă site-ul.
+		</p>
+
+		<p>
+			Dacă sunteți una dintre organizațiile enumerate la paragraful 2 de mai sus și sunteți
+			interesat să faceți legătura pe site-ul nostru web, trebuie să ne informați trimițând un
+			e-mail către Analistul. Vă rugăm să includeți numele, numele organizației dvs., informațiile
+			de contact, precum și adresa URL a site-ului dvs., o listă de orice adrese URL de la care
+			intenționați să faceți legătura cu site-ul nostru web și o listă a adreselor URL de pe site-ul
+			nostru pe care doriți să le legați. Așteptați 2-3 săptămâni pentru un răspuns.
+		</p>
+
+		<p>Organizațiile aprobate pot face hyperlink către site-ul nostru web după cum urmează:</p>
+
+		<ul>
+			<li>Prin utilizarea numelui nostru corporativ; sau</li>
+			<li>Prin utilizarea localizatorului de resurse uniform legat de; sau</li>
+			<li>
+				Folosind orice altă descriere a site-ului nostru web care este legată de acest lucru are
+				sens în cadrul contextul și formatul conținutului de pe site-ul părții care leagă.
+			</li>
+		</ul>
+
+		<p>
+			Nu se va permite utilizarea logo-ului Analistul sau a altor lucrări de artă pentru conectarea
+			unei mărci comerciale absente acord de licență.
 		</p>
 
 		<h3><strong>iFrames</strong></h3>
 
 		<p>
-			Without prior approval and written permission, you may not create frames around our Webpages
-			that alter in any way the visual presentation or appearance of our Website.
+			Fără aprobare prealabilă și autorizație scrisă, nu puteți crea cadre în jurul paginilor
+			noastre Web care modifică în orice fel prezentarea vizuală sau aspectul site-ului nostru web.
 		</p>
 
-		<h3><strong>Content Liability</strong></h3>
+		<h3><strong> Răspundere la conținut</strong></h3>
 
 		<p>
-			We shall not be hold responsible for any content that appears on your Website. You agree to
-			protect and defend us against all claims that is rising on your Website. No link(s) should
-			appear on any Website that may be interpreted as libelous, obscene or criminal, or which
-			infringes, otherwise violates, or advocates the infringement or other violation of, any third
-			party rights.
+			Nu vom fi responsabili pentru niciun conținut care apare pe site-ul dvs. Web. Sunteți de acord
+			protejați-ne și apărați-ne împotriva tuturor revendicărilor care apar pe site-ul dvs. Web.
+			Nicio legătură nu trebuie apară pe orice site web care poate fi interpretat calomnios, obscen
+			sau criminal sau care încalcă, încalcă altfel sau susține încălcarea sau orice altă încălcare
+			a oricărei treimi drepturi de partid.
 		</p>
 
-		<h3><strong>Your Privacy</strong></h3>
+		<h3><strong>Confidențialitatea dvs.</strong></h3>
 
-		<p>Please read Privacy Policy</p>
+		<p>Vă rugăm să citiți Politica de confidențialitate</p>
 
-		<h3><strong>Reservation of Rights</strong></h3>
+		<h3><strong>Rezervarea drepturilor</strong></h3>
 
 		<p>
-			We reserve the right to request that you remove all links or any particular link to our
-			Website. You approve to immediately remove all links to our Website upon request. We also
-			reserve the right to amen these terms and conditions and it’s linking policy at any time. By
-			continuously linking to our Website, you agree to be bound to and follow these linking terms
-			and conditions.
+			Ne rezervăm dreptul de a solicita eliminarea tuturor linkurilor sau a oricărui link special
+			către noi Site-ul web. Aprobați să eliminați imediat toate linkurile către site-ul nostru web
+			la cerere. Noi de asemenea rezervați dreptul de a amenaja acești termeni și condiții și este
+			politica de legătură în orice moment. De conectând continuu la site-ul nostru web, sunteți de
+			acord să fiți obligați și să urmați acești termeni de legătură și condiții.
 		</p>
 
-		<h3><strong>Removal of links from our website</strong></h3>
+		<h3><strong>Eliminarea linkurilor de pe site-ul nostru web </strong></h3>
 
 		<p>
-			If you find any link on our Website that is offensive for any reason, you are free to contact
-			and inform us any moment. We will consider requests to remove links but we are not obligated
-			to or so or to respond to you directly.
+			Dacă găsiți vreun link de pe site-ul nostru care este ofensator din orice motiv, sunteți liber
+			să contactați și informați-ne în orice moment. Vom lua în considerare cererile de eliminare a
+			linkurilor, dar nu suntem obligați sau cam așa ceva sau pentru a vă răspunde direct.
 		</p>
 
 		<p>
-			We do not ensure that the information on this website is correct, we do not warrant its
-			completeness or accuracy; nor do we promise to ensure that the website remains available or
-			that the material on the website is kept up to date.
+			Nu ne asigurăm că informațiile de pe acest site web sunt corecte, nu le garantăm
+			exhaustivitate sau acuratețe; nici nu promitem să ne asigurăm că site-ul web rămâne disponibil
+			sau că materialul de pe site-ul web este actualizat.
 		</p>
 
 		<h3><strong>Disclaimer</strong></h3>
 
 		<p>
-			To the maximum extent permitted by applicable law, we exclude all representations, warranties
-			and conditions relating to our website and the use of this website. Nothing in this disclaimer
-			will:
+			În măsura maximă permisă de legea aplicabilă, excludem toate reprezentările, garanțiile și
+			condițiile referitoare la site-ul nostru web și la utilizarea acestui site web. Nimic din
+			această exonerare va:
 		</p>
 
 		<ul>
-			<li>limit or exclude our or your liability for death or personal injury;</li>
-			<li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+			<li>limitați sau excludeți răspunderea noastră pentru moarte sau vătămare corporală;</li>
 			<li>
-				limit any of our or your liabilities in any way that is not permitted under applicable law;
-				or
+				limitați sau excludeți răspunderea noastră sau pentru fraudă sau prezentare greșită
+				frauduloasă;
 			</li>
-			<li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+			<li>
+				limitați oricare dintre datoriile noastre sau ale dvs. în orice mod care nu este permis în
+				conformitate cu legislația aplicabilă ; sau
+			</li>
+			<li>
+				exclude oricare dintre datoriile noastre sau care nu pot fi excluse în conformitate cu
+				legislația aplicabilă.
+			</li>
 		</ul>
 
 		<p>
-			The limitations and prohibitions of liability set in this Section and elsewhere in this
-			disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising
-			under the disclaimer, including liabilities arising in contract, in tort and for breach of
-			statutory duty.
+			Limitările și interdicțiile de răspundere stabilite în această secțiune și în alte părți din
+			aceasta exonerare de răspundere: (a) sunt supuse alineatului precedent; și (b) guvernează
+			toate datoriile care apar în temeiul renunțării, inclusiv obligațiile care decurg din
+			contract, în infracțiune și pentru încălcarea acestora îndatorire legală.
 		</p>
 
 		<p>
-			As long as the website and the information and services on the website are provided free of
-			charge, we will not be liable for any loss or damage of any nature.
+			Atâta timp cât site-ul web și informațiile și serviciile de pe site-ul web sunt furnizate fără
+			taxă, nu vom fi responsabili pentru nicio pierdere sau deteriorare de nicio natură.
 		</p>
 	</div>
 </main>
