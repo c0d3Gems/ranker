@@ -12,14 +12,15 @@
 				console.log(googleUser);
 				// do stuff here
 
-				// const responsePayload = decodeJwtResponse(response.credential);
-				// console.log('ID: ' + responsePayload.sub);
-				// console.log('Full Name: ' + responsePayload.name);
-				// console.log('Given Name: ' + responsePayload.given_name);
-				// console.log('Family Name: ' + responsePayload.family_name);
-				// console.log('Image URL: ' + responsePayload.picture);
-				// console.log('Email: ' + responsePayload.email);
-				// console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+				const options = {
+					method: 'post',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: googleUser
+				};
+				const request = await fetch('/api/auth/google', options);
+				const response = await request.json();
 			};
 		}
 		if (!window.googleSignOut) {
@@ -49,17 +50,18 @@
 				<div
 					id="g_id_onload"
 					data-client_id="544606774946-pjhe7mqeembpn2hbk43g7lfi28ni12qi"
+					data-context="signin"
+					data-ux_mode="popup"
 					data-callback="googleSignIn"
-					data-auto_select="true"
 					data-auto_prompt="false"
 				/>
 				<div
 					class="g_id_signin"
 					data-type="standard"
+					data-shape="pill"
+					data-theme="filled_blue"
+					data-text="signin_with"
 					data-size="large"
-					data-theme="outline"
-					data-text="sign_in_with"
-					data-shape="rectangular"
 					data-logo_alignment="left"
 				/>
 			</center>
@@ -81,8 +83,12 @@
 <Footer />
 
 <style>
+	center {
+		margin: 35px 0;
+	}
 	.disclaimer {
 		margin-top: 10px;
+		font-size: 10pt;
 	}
 	.box {
 		position: absolute;
@@ -96,6 +102,6 @@
 		padding: 35px;
 	}
 	.content {
-		min-height: 90vw;
+		min-height: 90vh;
 	}
 </style>

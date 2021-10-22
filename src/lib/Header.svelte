@@ -1,43 +1,89 @@
 <script>
-	let showcontextual = false;
-	import { onMount } from 'svelte';
-	onMount(async () => {
-		// if (!window.googleSignIn) {
-		// 	window.googleSignIn = async (googleUser) => {
-		// 		console.log(googleUser);
-		// 		// do stuff here
-		// 		// const responsePayload = decodeJwtResponse(response.credential);
-		// 		// console.log('ID: ' + responsePayload.sub);
-		// 		// console.log('Full Name: ' + responsePayload.name);
-		// 		// console.log('Given Name: ' + responsePayload.given_name);
-		// 		// console.log('Family Name: ' + responsePayload.family_name);
-		// 		// console.log('Image URL: ' + responsePayload.picture);
-		// 		// console.log('Email: ' + responsePayload.email);
-		// 		// console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-		// 	};
-		// }
-		// if (!window.googleSignOut) {
-		// 	window.googleSignOut = () => {
-		// 		var auth2 = gapi.auth2.getAuthInstance();
-		// 		auth2.signOut().then(function () {
-		// 			console.log('User signed out.');
-		// 		});
-		// 	};
-		// }
-	});
+	let showMobileMenu = false;
+	const toggleMenu = () => {
+		showMobileMenu = !showMobileMenu;
+	};
 </script>
 
 <header>
 	<a href="/"><h2>Analistul</h2></a>
-	<nav>
+	{#if !showMobileMenu}
+		<img class="menuToggle" src="/menu.svg" alt="mobile-menu" on:click={toggleMenu} />
+	{/if}
+	<nav class="bignav">
 		<a href="/institutii">Instituții de învățământ</a>
 		<a href="/cadre-didactice">Cadre didactice</a>
 		<a href="/blog">Blog</a>
 		<a href="/login">Autentificare</a>
 	</nav>
+	{#if showMobileMenu}
+		<div class="backdrop" on:click={toggleMenu} />
+		<div class="mobileMenu">
+			<div class="nodabackdrop" on:click={toggleMenu} />
+			<nav class="smallnav">
+				<a href="/institutii">Instituții de învățământ</a>
+				<a href="/cadre-didactice">Cadre didactice</a>
+				<a href="/blog">Blog</a>
+				<a href="/login">Autentificare</a>
+			</nav>
+		</div>
+	{/if}
 </header>
 
 <style>
+	.nodabackdrop {
+		width: 100%;
+		height: 100%;
+	}
+	.backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+	}
+	.menuToggle {
+		display: none;
+		cursor: pointer;
+		float: right;
+		width: 42px;
+		margin-right: 32px;
+		position: relative;
+		bottom: 5px;
+	}
+	.mobileMenu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: black;
+		height: 100vh;
+		width: 300px;
+		display: none;
+	}
+	.mobileMenu a {
+		display: block;
+		margin: 25px 0 0 0;
+		width: 80%;
+	}
+	.mobileMenu nav.smallnav {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 70%;
+		display: block;
+	}
+	@media (max-width: 640px) {
+		.bignav {
+			display: none;
+		}
+		.menuToggle {
+			display: inline-block;
+		}
+		.mobileMenu {
+			display: block;
+		}
+	}
 	header {
 		padding: 15px;
 		box-sizing: border-box;

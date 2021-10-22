@@ -36,7 +36,7 @@
 		width: 100vw;
 	}
 	h1 {
-		font-size: 5vw;
+		font-size: 4vw;
 		background: -webkit-linear-gradient(45deg, #ec4895, #f59b0d);
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -44,6 +44,11 @@
 		margin: 20px;
 		display: inline-block;
 		width: fit-content;
+	}
+	@media (min-width: 800px) {
+		h1 {
+			font-size: 60px;
+		}
 	}
 	main {
 		background-image: url('/charts.jpg');

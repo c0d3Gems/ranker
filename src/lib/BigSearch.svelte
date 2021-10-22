@@ -17,7 +17,7 @@
 </script>
 
 <input
-	placeholder="Caută profesor, instituție școlară, județ"
+	placeholder="Caută cadre didactice sau instituție de învățământ"
 	type="search"
 	aria-label="Caută"
 	bind:value={searchValue}
@@ -67,5 +67,10 @@
 	}
 	.r {
 		margin: 5px 10px;
+	}
+	@media (min-width: 800px) {
+		input[type='search'] {
+			width: 600px;
+		}
 	}
 </style>
