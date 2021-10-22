@@ -227,7 +227,7 @@
 
 		<h3><strong>Confidențialitatea dvs.</strong></h3>
 
-		<p>Vă rugăm să citiți Politica de confidențialitate</p>
+		<p>Vă rugăm să citiți <a href="/confidentialitate">Politica de confidențialitate</a></p>
 
 		<h3><strong>Rezervarea drepturilor</strong></h3>
 
