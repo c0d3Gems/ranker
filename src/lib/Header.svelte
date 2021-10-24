@@ -1,8 +1,17 @@
 <script>
+	import { onMount } from 'svelte';
 	let showMobileMenu = false;
+	let authenticated = false;
 	const toggleMenu = () => {
 		showMobileMenu = !showMobileMenu;
 	};
+
+	onMount(async () => {
+		const session = localStorage.getItem('ses');
+		if (session) {
+			authenticated = true;
+		}
+	});
 </script>
 
 <header>
@@ -14,7 +23,11 @@
 		<a href="/institutii">Instituții de învățământ</a>
 		<a href="/cadre-didactice">Cadre didactice</a>
 		<a href="/blog">Blog</a>
-		<a href="/login">Autentificare</a>
+		{#if authenticated}
+			<a href="/logout">Deconectare</a>
+		{:else}
+			<a href="/login">Autentificare</a>
+		{/if}
 	</nav>
 	{#if showMobileMenu}
 		<div class="backdrop" on:click={toggleMenu} />
@@ -24,7 +37,11 @@
 				<a href="/institutii">Instituții de învățământ</a>
 				<a href="/cadre-didactice">Cadre didactice</a>
 				<a href="/blog">Blog</a>
-				<a href="/login">Autentificare</a>
+				{#if authenticated}
+					<a href="/logout">Deconectare</a>
+				{:else}
+					<a href="/login">Autentificare</a>
+				{/if}
 			</nav>
 		</div>
 	{/if}

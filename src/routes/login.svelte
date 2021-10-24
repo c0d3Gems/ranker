@@ -9,7 +9,7 @@
 	onMount(async () => {
 		if (!window.googleSignIn) {
 			window.googleSignIn = async (googleUser) => {
-				console.log(googleUser);
+				// console.log(googleUser);
 				// do stuff here
 
 				const options = {
@@ -17,10 +17,14 @@
 					headers: {
 						'Content-Type': 'application/json'
 					},
-					body: googleUser
+					body: JSON.stringify(googleUser)
 				};
 				const request = await fetch('/api/auth/google', options);
 				const response = await request.json();
+				if (response?.message === 'google_auth_successful') {
+					localStorage.setItem('ses', response?.payload);
+					window.location.replace(`${window.location.origin}/`);
+				}
 			};
 		}
 		if (!window.googleSignOut) {
