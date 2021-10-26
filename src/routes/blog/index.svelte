@@ -4,6 +4,11 @@
 	import '../../app.css';
 </script>
 
+<svelte:head>
+	<title>Blog - Analistul.com</title>
+	<meta name="description" content="Accesează toate articolele de blog scrise de analistul.com" />
+	<link rel="canonical" href="https://analistul.com/blog" />
+</svelte:head>
 <Header />
 <main>
 	<h1>Blog</h1>

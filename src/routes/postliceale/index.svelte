@@ -30,10 +30,10 @@
 </script>
 
 <svelte:head>
-	<title>Postliceale</title>
+	<title>Postliceale - Analistul.com</title>
 	<meta
 		name="description"
-		content="Descoperă care sunt cele mai bune postliceale din orașul tău!"
+		content="Descoperă care sunt cele mai bune postliceale din orașul sau județul tău!"
 	/>
 </svelte:head>
 <Header />

@@ -21,12 +21,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Autentificare - Analistul.com</title>
-	<meta name="description" content="Pagina de autentificare in contul tau Analistul.com." />
-	<link rel="canonical" href="https://analistul.com/" />
-</svelte:head>
-
 <Header />
 <main>
 	<div class="content">

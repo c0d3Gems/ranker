@@ -30,15 +30,15 @@
 </script>
 
 <svelte:head>
-	<title>Școli</title>
+	<title>Școli Gimnaziale - Analistul.com</title>
 	<meta name="description" content="Descoperă care sunt cele mai bune școli din orașul tău!" />
 </svelte:head>
 <Header />
 <main>
-	<h1>Școli</h1>
+	<h1>Școli Gimnaziale</h1>
 	<div class="contextual">
 		<nav>
-			<a href="/scoli">Școli</a>
+			<a href="/scoli">Școli Gimnaziale</a>
 			<a href="/scoli/top-100-national">Top 100 național</a>
 		</nav>
 	</div>

@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Academii</title>
+	<title>Academii - Analistul.com</title>
 	<meta name="description" content="Descoperă care sunt cele mai bune academii din Romania!" />
 </svelte:head>
 <Header />

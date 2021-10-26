@@ -30,10 +30,10 @@
 </script>
 
 <svelte:head>
-	<title>Universități</title>
+	<title>Universități - Analistul.com</title>
 	<meta
 		name="description"
-		content="Descoperă care sunt cele mai bune universități din orașul tău!"
+		content="Descoperă care sunt cele mai bune universități din orașul, județul tău sau din România!"
 	/>
 </svelte:head>
 <Header />

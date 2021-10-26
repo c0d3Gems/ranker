@@ -4,6 +4,15 @@
 	import '../../app.css';
 </script>
 
+<svelte:head>
+	<title>Instituții - Analistul.com</title>
+	<meta
+		name="description"
+		content="Accesează toate categoriile instituțiilor de învățământ disponibile pe analistul.com"
+	/>
+	<link rel="canonical" href="https://analistul.com/institutii" />
+</svelte:head>
+
 <Header />
 <main>
 	<h1>Instituții de învățământ</h1>

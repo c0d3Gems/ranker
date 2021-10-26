@@ -4,6 +4,15 @@
 	import '../app.css';
 </script>
 
+<svelte:head>
+	<title>Cadre Didactice - Analistul.com</title>
+	<meta
+		name="description"
+		content="Accesează toate categoriile de cadre didactice disponibile pe analistul.com"
+	/>
+	<link rel="canonical" href="https://analistul.com/cadre-didactice" />
+</svelte:head>
+
 <Header />
 <main>
 	<h1>Cadre Didactice</h1>

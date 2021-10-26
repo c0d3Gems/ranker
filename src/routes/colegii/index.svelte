@@ -30,8 +30,8 @@
 </script>
 
 <svelte:head>
-	<title>Colegii</title>
-	<meta name="description" content="Descoperă care sunt cele mai bune școli din orașul tău!" />
+	<title>Colegii - Analistul.com</title>
+	<meta name="description" content="Descoperă care sunt cele mai bune colegii din orașul tău!" />
 </svelte:head>
 <Header />
 <main>

@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Grădinițe</title>
+	<title>Grădinițe - Analistul.com</title>
 	<meta name="description" content="Descoperă care sunt cele mai bune grădinițe din orașul tău!" />
 </svelte:head>
 <Header />

@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Licee</title>
+	<title>Licee - Analistul.com</title>
 	<meta name="description" content="Descoperă care sunt cele mai bune licee din orașul tău!" />
 </svelte:head>
 <Header />
