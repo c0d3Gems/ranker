@@ -375,13 +375,42 @@ ALTER TABLE public.reclamatii ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 
 --
+-- Name: sessions; Type: TABLE; Schema: public; Owner: cosmin
+--
+
+CREATE TABLE public.sessions (
+    id integer NOT NULL,
+    token text NOT NULL,
+    creation_time time without time zone DEFAULT CURRENT_TIME NOT NULL,
+    creation_date date DEFAULT CURRENT_DATE NOT NULL,
+    id_utilizator integer NOT NULL
+);
+
+
+ALTER TABLE public.sessions OWNER TO cosmin;
+
+--
+-- Name: sessions_id_seq; Type: SEQUENCE; Schema: public; Owner: cosmin
+--
+
+ALTER TABLE public.sessions ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.sessions_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
 -- Name: utilizatori; Type: TABLE; Schema: public; Owner: cosmin
 --
 
 CREATE TABLE public.utilizatori (
     id integer NOT NULL,
     username character varying(200) DEFAULT 'new-user'::character varying NOT NULL,
-    google_id integer NOT NULL,
+    google_id character varying(160) NOT NULL,
     data_inregistrare date DEFAULT CURRENT_DATE NOT NULL,
     data_nastere date DEFAULT CURRENT_DATE NOT NULL,
     id_institutie_curenta integer,
@@ -5037,10 +5066,20 @@ COPY public.reclamatii (id, titlu, text, id_profesor) FROM stdin;
 
 
 --
+-- Data for Name: sessions; Type: TABLE DATA; Schema: public; Owner: cosmin
+--
+
+COPY public.sessions (id, token, creation_time, creation_date, id_utilizator) FROM stdin;
+11	64441361112bf2465872704b70b75c10	10:13:33.085964	2021-10-24	12
+\.
+
+
+--
 -- Data for Name: utilizatori; Type: TABLE DATA; Schema: public; Owner: cosmin
 --
 
 COPY public.utilizatori (id, username, google_id, data_inregistrare, data_nastere, id_institutie_curenta, ban_status, email, profile_pic_url, prenume, nume) FROM stdin;
+12	new-user	105182291093377536529	2021-10-24	2021-10-24	\N	f	techdubberstudio@gmail.com	https://lh3.googleusercontent.com/a-/AOh14GixDDOZhnwfQn6VkxKELuFwpuEpVKivr3wtjt8YDg=s96-c	Cosmin	Aruxandei
 \.
 
 
@@ -5129,10 +5168,17 @@ SELECT pg_catalog.setval('public.reclamatii_id_seq', 1, false);
 
 
 --
+-- Name: sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cosmin
+--
+
+SELECT pg_catalog.setval('public.sessions_id_seq', 11, true);
+
+
+--
 -- Name: utilizatori_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cosmin
 --
 
-SELECT pg_catalog.setval('public.utilizatori_id_seq', 1, false);
+SELECT pg_catalog.setval('public.utilizatori_id_seq', 12, true);
 
 
 --
@@ -5229,6 +5275,14 @@ ALTER TABLE ONLY public.rating_profesori
 
 ALTER TABLE ONLY public.reclamatii
     ADD CONSTRAINT pk_reclamatii_id PRIMARY KEY (id);
+
+
+--
+-- Name: sessions pk_sessions_id; Type: CONSTRAINT; Schema: public; Owner: cosmin
+--
+
+ALTER TABLE ONLY public.sessions
+    ADD CONSTRAINT pk_sessions_id PRIMARY KEY (id);
 
 
 --
@@ -5461,6 +5515,14 @@ ALTER TABLE ONLY public.rating_profesori
 
 ALTER TABLE ONLY public.reclamatii
     ADD CONSTRAINT fk_reclamatii_profesori FOREIGN KEY (id_profesor) REFERENCES public.profesori(id);
+
+
+--
+-- Name: sessions fk_sessions_utilizatori; Type: FK CONSTRAINT; Schema: public; Owner: cosmin
+--
+
+ALTER TABLE ONLY public.sessions
+    ADD CONSTRAINT fk_sessions_utilizatori FOREIGN KEY (id_utilizator) REFERENCES public.utilizatori(id) ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 --
