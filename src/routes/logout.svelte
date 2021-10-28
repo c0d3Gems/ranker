@@ -15,9 +15,10 @@
 				authorization: session
 			}
 		};
-		const req = await fetch(`/api/logout`, options);
+		const req = await fetch(`/api/auth/logout`, options);
 		const result = await req.json();
 		localStorage.removeItem('ses');
+		window.location.reload();
 	});
 </script>
 
