@@ -152,8 +152,23 @@ const getInstitutionById = async (id) => {
 	return result?.rows;
 };
 
+const getAllIds = async (page) => {
+	const skip = page || 0;
+	const sql = `select id from institutii as "id" where id >= 0 OFFSET ${skip * 2000} LIMIT 2000;`;
+	const result = await pool.query(sql);
+	return result?.rows;
+};
+
+const getNumberOfSitemaps = async () => {
+	const sql = `select count(*) as "count" from institutii where id > 0;`;
+	const result = await pool.query(sql);
+	const count = Math.ceil(Number(result?.rows[0].count) / 2000);
+	return { count };
+};
+
 export default {
 	getAll,
+	getAllIds,
 	getAllAlphabetical,
 	getAllInstitutionsFromCountyId,
 	getAllWithRating,
@@ -173,6 +188,7 @@ export default {
 	getAllAcademies,
 	getAllAcademiesCount,
 	getInstitutionById,
+	getNumberOfSitemaps,
 	searchForInstitution,
 	searchForInstitutionWithCountyName
 };
