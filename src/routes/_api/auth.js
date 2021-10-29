@@ -55,6 +55,28 @@ const googleAuth = async (params) => {
 	}
 };
 
+const logout = async (params) => {
+	const { authorization } = params;
+	if (authorization) {
+		const id = authorization.split('-')[0];
+		const userId = authorization.split('-')[1];
+		const token = authorization.split('-')[2];
+		const sql = `delete from sessions where id = '${id}' and id_utilizator = '${userId}' and token = '${token}' ;`;
+		const result = await pool.query(sql);
+		console.log('result', result);
+		return {
+			status: 'ok',
+			message: 'session_deleted_successfully'
+		};
+	} else {
+		return {
+			status: 'error',
+			message: 'authorization_header_missing'
+		};
+	}
+};
+
 export default {
-	googleAuth
+	googleAuth,
+	logout
 };
