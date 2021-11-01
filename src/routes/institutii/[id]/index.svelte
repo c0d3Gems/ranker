@@ -32,6 +32,7 @@
 	// export let ldJson;
 
 	let userAuthenticated;
+	let userSession;
 	let done = false;
 	let ownRating;
 	let ownRatingText;
@@ -40,6 +41,7 @@
 		const session = localStorage.getItem('ses');
 		if (session) {
 			userAuthenticated = true;
+			userSession = session;
 		} else {
 			userAuthenticated = false;
 		}
@@ -61,6 +63,44 @@
 				console.log(ownRating);
 			}
 		});
+	};
+	const submitForm = async () => {
+		if (userAuthenticated) {
+			if (!ownRating || ownRating === 0) {
+				window.alert('Nu ai dat cel puțin o steluță. Minimul este o steluță');
+			}
+			const options = {
+				method: 'post',
+				headers: {
+					'Content-Type': 'application/json',
+					Authorization: userSession
+				},
+				body: JSON.stringify({
+					ownRating,
+					ownRatingText
+				})
+			};
+			const submitReview = await fetch('/api/institutii/review', options);
+			const result = await submitReview.json();
+		}
+	};
+	const deleteReview = async (e) => {
+		const element = e.target;
+		const reviewId = e.getAttribute('data-id');
+		if (userAuthenticated) {
+			const options = {
+				method: 'delete',
+				headers: {
+					'Content-Type': 'application/json',
+					Authorization: userSession
+				},
+				body: JSON.stringify({
+					reviewId
+				})
+			};
+			const deleteReview = await fetch('/api/institutii/review', options);
+			const result = await submitReview.json();
+		}
 	};
 </script>
 
@@ -169,7 +209,7 @@
 							id="comment"
 							rows="10"
 						/>
-						<input type="submit" value="Trimite" />
+						<input type="submit" value="Trimite" on:click={submitForm} />
 					</div>
 				</div>
 			{/if}

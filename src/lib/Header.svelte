@@ -15,7 +15,7 @@
 </script>
 
 <header>
-	<a href="/"><h2>Analistul</h2></a>
+	<a href="/"><h2><span>A</span>nalistul</h2></a>
 	{#if !showMobileMenu}
 		<img class="menuToggle" src="/menu.svg" alt="mobile-menu" on:click={toggleMenu} />
 	{/if}
@@ -48,6 +48,15 @@
 </header>
 
 <style>
+	h2 > span {
+		background-color: #05a;
+		display: inline-block;
+		height: fit-content;
+		width: fit-content;
+		border-radius: 4px;
+		box-sizing: border-box;
+		padding: 0 4px;
+	}
 	.nodabackdrop {
 		width: 100%;
 		height: 100%;
