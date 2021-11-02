@@ -2,7 +2,9 @@
 	export async function load({ page, fetch, params }) {
 		const institutionId = page?.params?.id;
 		const request = await fetch(`/api/institutii/${institutionId}`);
+		const reviewRequest = await fetch(`/api/institutii/${institutionId}/reviews`);
 		const institutionInfo = await request.json();
+		const reviews = await reviewRequest.json();
 
 		// const ldJson = `<script type="application/ld+json">{
 		// 	"@context": "https://schema.org/",
@@ -18,7 +20,7 @@
 		// 	}`
 
 		return {
-			props: { institutionInfo }
+			props: { institutionInfo, reviews }
 		};
 	}
 </script>
@@ -29,12 +31,16 @@
 	import Footer from '$lib/Footer.svelte';
 	import { onMount } from 'svelte';
 	export let institutionInfo;
+	export let reviews;
 	// export let ldJson;
 
 	let userAuthenticated;
 	let userSession;
 	let done = false;
-	let ownRating;
+	let ownRatingConditions;
+	let ownRatingFeatures;
+	let ownRatingEquipment;
+	let ownRatingUtilities;
 	let ownRatingText;
 
 	onMount(async () => {
@@ -59,15 +65,37 @@
 			else {
 				s.classList.add('checked');
 				done = true;
-				ownRating = i + 1;
-				console.log(ownRating);
+				// ownRating = i + 1;
+				// console.log(ownRating);
+				const dataContext = parentElement.getAttribute('data-context');
+				if (dataContext === 'conditii') {
+					ownRatingConditions = i + 1;
+				} else if (dataContext === 'facilitati') {
+					ownRatingFeatures = i + 1;
+				} else if (dataContext === 'dotari') {
+					ownRatingEquipment = i + 1;
+				} else if (dataContext === 'utilitati') {
+					ownRatingUtilities = i + 1;
+				}
 			}
 		});
 	};
 	const submitForm = async () => {
 		if (userAuthenticated) {
-			if (!ownRating || ownRating === 0) {
-				window.alert('Nu ai dat cel puțin o steluță. Minimul este o steluță');
+			const institutionId = institutionInfo[0].id;
+			if (
+				!ownRatingConditions ||
+				ownRatingConditions === 0 ||
+				!ownRatingFeatures ||
+				ownRatingFeatures === 0 ||
+				!ownRatingEquipment ||
+				ownRatingEquipment === 0 ||
+				!ownRatingUtilities ||
+				ownRatingUtilities === 0
+			) {
+				window.alert(
+					'Nu ai dat cel puțin o steluță. Minimul este o steluță pentru fiecare categorie.'
+				);
 			}
 			const options = {
 				method: 'post',
@@ -76,7 +104,12 @@
 					Authorization: userSession
 				},
 				body: JSON.stringify({
-					ownRating,
+					userId: Number(userSession.split('-')[1]),
+					institutionId,
+					ownRatingConditions,
+					ownRatingFeatures,
+					ownRatingEquipment,
+					ownRatingUtilities,
 					ownRatingText
 				})
 			};
@@ -87,6 +120,7 @@
 	const deleteReview = async (e) => {
 		const element = e.target;
 		const reviewId = e.getAttribute('data-id');
+		const institutionId = institutionInfo[0].id;
 		if (userAuthenticated) {
 			const options = {
 				method: 'delete',
@@ -95,7 +129,8 @@
 					Authorization: userSession
 				},
 				body: JSON.stringify({
-					reviewId
+					reviewId,
+					institutionId
 				})
 			};
 			const deleteReview = await fetch('/api/institutii/review', options);
@@ -139,75 +174,112 @@
 		<section id="recenzii">
 			<h2>Recenzii</h2>
 			<div class="rc" style={!userAuthenticated ? 'width: 100%;' : ''}>
-				<div class="r">
-					<div class="stars">
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
+				{#each reviews?.payload as r}
+					<div class="r">
+						<!-- <div class="stars"> -->
+						<tr
+							><td> Condiții:</td><td>
+								<span class="fa fa-star {r?.nota_conditii >= 1 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_conditii >= 2 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_conditii >= 3 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_conditii >= 4 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_conditii >= 5 ? 'checked' : null}" /></td
+							></tr
+						>
+						<tr>
+							<td>Facilități:</td>
+							<td>
+								<span class="fa fa-star {r?.nota_facilitati >= 1 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_facilitati >= 2 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_facilitati >= 3 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_facilitati >= 4 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_facilitati >= 5 ? 'checked' : null}" />
+							</td>
+						</tr>
+						<tr>
+							<td>Dotări:</td>
+							<td>
+								<span class="fa fa-star {r?.nota_dotari >= 1 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_dotari >= 2 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_dotari >= 3 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_dotari >= 4 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_dotari >= 5 ? 'checked' : null}" /></td
+							></tr
+						>
+						<tr
+							><td> Utilități:</td><td>
+								<span class="fa fa-star {r?.nota_utilitati >= 1 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_utilitati >= 2 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_utilitati >= 3 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_utilitati >= 4 ? 'checked' : null}" />
+								<span class="fa fa-star {r?.nota_utilitati >= 5 ? 'checked' : null}" /></td
+							></tr
+						>
+						<div class="msg">{r?.text}</div>
 					</div>
-					<div class="msg">Some sample message here</div>
-				</div>
-				<div class="r">
-					<div class="stars">
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-					</div>
-					<div class="msg">Some sample message here</div>
-				</div>
-				<div class="r">
-					<div class="stars">
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-					</div>
-					<div class="msg">Some sample message here</div>
-				</div>
-				<div class="r">
-					<div class="stars">
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-					</div>
-					<div class="msg">Some sample message here</div>
-				</div>
-				<div class="r">
-					<div class="stars">
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star checked" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-						<span class="fa fa-star" />
-					</div>
-					<div class="msg">Some sample message here</div>
-				</div>
+				{/each}
 			</div>
 			{#if userAuthenticated}
 				<div class="cr">
 					<h3>Părerea mea:</h3>
 					<div class="r">
-						<div class="stars" id="createRating">
-							Notă:
+						<div class="stars" data-context="conditii">
+							Condiții:
 							<span on:click={onClickStars} class="fa fa-star" />
 							<span on:click={onClickStars} class="fa fa-star" />
 							<span on:click={onClickStars} class="fa fa-star" />
 							<span on:click={onClickStars} class="fa fa-star" />
 							<span on:click={onClickStars} class="fa fa-star" />
+							<div class="explaination">
+								1 steluta daca e cladire veche, neintretinuta. 5 stele daca este o cladire noua, sau
+								reconditionata dupa ultimele standarde
+							</div>
 						</div>
+						<div class="stars" data-context="facilitati">
+							Facilități:
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<div class="explaination">
+								1 steluta daca NU se pot accesa toaletele si alte facilitati de baza ale cladirii. 5
+								stele daca se pot accesa de catre personal si studenti / elevi / copii.
+							</div>
+						</div>
+						<div class="stars" data-context="dotari">
+							Dotări:
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<div class="explaination">
+								1 steluta daca institutia NU este conforma normelor de protectie a muncii.<br />
+								5 stelute daca institutia este conforma normelor de protectie a muncii.
+							</div>
+						</div>
+						<div class="stars" data-context="utilitati">
+							Utilități:
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<span on:click={onClickStars} class="fa fa-star" />
+							<div class="explaination">
+								1 steluta daca echipamentele tehnologice, si alte utilitati din aceasta institutie
+								sunt inexistente sau foarte vechi. 5 stelute daca sunt foarte noi, si nu exista
+								lipsuri.
+							</div>
+						</div>
+						<div>Alte mențiuni</div>
 						<textarea
 							bind:value={ownRatingText}
-							maxlength="800"
+							maxlength="3800"
 							name="comentariu"
 							id="comment"
 							rows="10"
+							aria-label="comentariu"
 						/>
 						<input type="submit" value="Trimite" on:click={submitForm} />
 					</div>
@@ -220,6 +292,13 @@
 <Footer />
 
 <style>
+	.msg {
+		margin-top: 10px;
+	}
+	.explaination {
+		font-size: 10pt;
+		font-weight: bold;
+	}
 	.cr .fa.fa-star {
 		cursor: pointer;
 	}
@@ -243,7 +322,7 @@
 		display: block;
 		background-color: black;
 		color: white;
-		-moz-appearance: none;
+		-o-appearance: none;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		appearance: none;
@@ -252,6 +331,7 @@
 		font-size: 12pt;
 		float: right;
 		border: 0;
+		cursor: pointer;
 	}
 	section {
 		margin-top: 80px;

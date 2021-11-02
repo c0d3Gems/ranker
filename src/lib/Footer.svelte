@@ -25,8 +25,8 @@
 			<a href="/login">Autentificare</a>
 			<a href="/confidentialitate">Politica de Confidențialitate & Cookie</a>
 			<a href="/termeni-si-conditii">Termeni & Condiții</a>
-			<a href="/sitemap.xml">Sitemap</a>
-			<a href="/sitemaps.xml">Sitemap Institutii</a>
+			<!-- <a href="/sitemap.xml">Sitemap</a>
+			<a href="/sitemaps.xml">Sitemap Institutii</a> -->
 		</div>
 		<div class="col">
 			<a href="/blog"> <h2>Blog</h2></a>
