@@ -291,7 +291,6 @@ CREATE TABLE public.rating_institutii (
     text text,
     nota_facilitati integer DEFAULT 0 NOT NULL,
     nota_dotari integer DEFAULT 0 NOT NULL,
-    nota_dotari_tehnologice integer DEFAULT 0 NOT NULL,
     nota_utilitati integer DEFAULT 0 NOT NULL
 );
 
@@ -5045,7 +5044,8 @@ COPY public.profesori (id, nume, id_institutie_activ, pensionat) FROM stdin;
 -- Data for Name: rating_institutii; Type: TABLE DATA; Schema: public; Owner: cosmin
 --
 
-COPY public.rating_institutii (id, nota_conditii, id_utilizator, id_institutie, text, nota_facilitati, nota_dotari, nota_dotari_tehnologice, nota_utilitati) FROM stdin;
+COPY public.rating_institutii (id, nota_conditii, id_utilizator, id_institutie, text, nota_facilitati, nota_dotari, nota_utilitati) FROM stdin;
+1	1	12	36268	asdsda	2	3	4
 \.
 
 
@@ -5070,7 +5070,7 @@ COPY public.reclamatii (id, titlu, text, id_profesor) FROM stdin;
 --
 
 COPY public.sessions (id, token, creation_time, creation_date, id_utilizator) FROM stdin;
-11	64441361112bf2465872704b70b75c10	10:13:33.085964	2021-10-24	12
+50	832854a9a937abd7601dfdd8a738ad4f	06:39:29.244721	2021-11-01	12
 \.
 
 
@@ -5150,7 +5150,7 @@ SELECT pg_catalog.setval('public.profesori_id_profesor_seq', 1, false);
 -- Name: rating_id_rating_seq; Type: SEQUENCE SET; Schema: public; Owner: cosmin
 --
 
-SELECT pg_catalog.setval('public.rating_id_rating_seq', 1, false);
+SELECT pg_catalog.setval('public.rating_id_rating_seq', 1, true);
 
 
 --
@@ -5171,7 +5171,7 @@ SELECT pg_catalog.setval('public.reclamatii_id_seq', 1, false);
 -- Name: sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cosmin
 --
 
-SELECT pg_catalog.setval('public.sessions_id_seq', 11, true);
+SELECT pg_catalog.setval('public.sessions_id_seq', 50, true);
 
 
 --
