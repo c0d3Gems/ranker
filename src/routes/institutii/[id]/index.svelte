@@ -175,7 +175,7 @@
 			<h2>Recenzii</h2>
 			<div class="rc" style={!userAuthenticated ? 'width: 100%;' : ''}>
 				{#each reviews?.payload as r}
-					<div class="r">
+					<div class="r" data-userId={r?.id_utilizator}>
 						<!-- <div class="stars"> -->
 						<tr
 							><td> Condiții:</td><td>

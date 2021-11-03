@@ -1,3 +1,4 @@
+import Ratings from '../recenzii/institutii';
 import pg from 'pg';
 // import dotenv from 'dotenv';
 // dotenv.config();
@@ -53,7 +54,8 @@ const getAllKindergardens = async (offset) => {
 		offset ? `offset ${offset * 30}` : ''
 	};`;
 	const result = await pool.query(sql);
-	return result.rows;
+	const institutionsWithAvgRatings = await Ratings.getAveragesOf(result.rows);
+	return institutionsWithAvgRatings;
 };
 
 const getAllSchools = async (offset) => {

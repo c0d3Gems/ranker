@@ -88,8 +88,41 @@ const getAll = async (institutionId) => {
 	}
 };
 
+const getAveragesOf = async (insArr) => {
+	const institutions = insArr.map(async (ins, i) => {
+		const facilitiesSQL = `select avg(nota_facilitati)::numeric(10, 2) from rating_institutii where id_institutie = '${ins?.id}';`;
+		const conditionsSQL = `select avg(nota_conditii)::numeric(10, 2) from rating_institutii where id_institutie = '${ins?.id}';`;
+		const equipmentSQL = `select avg(nota_dotari)::numeric(10, 2) from rating_institutii where id_institutie = '${ins?.id}';`;
+		const utilitiesSQL = `select avg(nota_utilitati)::numeric(10, 2) from rating_institutii where id_institutie = '${ins?.id}';`;
+
+		const facilitiesAvg = await pool.query(facilitiesSQL);
+		const conditionsAvg = await pool.query(conditionsSQL);
+		const equipmentAvg = await pool.query(equipmentSQL);
+		const utilitiesAvg = await pool.query(utilitiesSQL);
+
+		const totalAverage = Number(
+			(Number(facilitiesAvg?.rows[0]?.avg) +
+				Number(conditionsAvg?.rows[0]?.avg) +
+				Number(equipmentAvg?.rows[0]?.avg) +
+				Number(utilitiesAvg?.rows[0]?.avg)) /
+				4
+		);
+		return {
+			...ins,
+			facilitiesAvg: Number(facilitiesAvg?.rows[0]?.avg),
+			conditionsAvg: Number(conditionsAvg?.rows[0]?.avg),
+			equipmentAvg: Number(equipmentAvg?.rows[0]?.avg),
+			utilitiesAvg: Number(utilitiesAvg?.rows[0]?.avg),
+			totalAverage: Number(totalAverage)
+		};
+	});
+	const finalInst = await Promise.all(institutions);
+	return finalInst;
+};
+
 export default {
 	create,
 	remove,
-	getAll
+	getAll,
+	getAveragesOf
 };
