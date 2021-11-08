@@ -1,7 +1,23 @@
+<script context="module">
+	export async function load({ fetch }) {
+		const result = await fetch(`/api/materii`);
+		const materii = await result.json();
+
+		return {
+			props: {
+				materii
+			}
+		};
+	}
+</script>
+
 <script>
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import AddProfessors from '$lib/AddProfessors.svelte';
 	import '../app.css';
+
+	export let materii;
 </script>
 
 <svelte:head>
@@ -26,6 +42,7 @@
 		<a href="/invatatori">Învățători</a>
 		<a href="/educatori">Educatori</a>
 		<a href="/profesori">Profesori</a>
+		<AddProfessors {materii} />
 	</div>
 </main>
 <Footer />
